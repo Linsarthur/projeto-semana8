@@ -1,7 +1,7 @@
-import { DataTypes } from "sequelize";
 import { connection } from "../config/database.js";
+import { DataTypes } from "sequelize";
 
-//Colunas: uf, cidade, cep, rua, numero
+// Colunas: uf, cidade, cep, rua, numero
 
 export const Endereco = connection.define("endereco", {
   uf: {
@@ -22,6 +22,6 @@ export const Endereco = connection.define("endereco", {
   },
   numero: {
     type: DataTypes.STRING,
-    defaultValue: "S/N" // Valor padrão da coluna.
-  }
+    defaultValue: "S/N", // Valor padrão da coluna
+  },
 });
